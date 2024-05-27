@@ -1,0 +1,39 @@
+class ProjectRequirements {
+    constructor() {
+        this.inventoryManagementRequirements = {};
+        this.orderProcessingRequirements = {};
+        this.customerInteractionRequirements = {};
+        this.networkingSecurityRequirements = {};
+        this.automationNeeds = {};
+        this.linuxWindowsEnvironmentHandling = {};
+        this.staticCodeAnalysisApproach = {};
+    }
+
+    captureInventoryManagementRequirements(requirements) {
+        this.inventoryManagementRequirements = requirements;
+    }
+
+    captureOrderProcessingRequirements(requirements) {
+        this.orderProcessingRequirements = requirements;
+    }
+
+    captureCustomerInteractionRequirements(requirements) {
+        this.customerInteractionRequirements = requirements;
+    }
+
+    captureNetworkingSecurityRequirements(requirements) {
+        this.networkingSecurityRequirements = requirements;
+    }
+
+    captureAutomationNeeds(needs) {
+        this.automationNeeds = needs;
+    }
+
+    captureLinuxWindowsEnvironmentHandling(strategy) {
+        this.linuxWindowsEnvironmentHandling = strategy;
+    }
+
+    captureStaticCodeAnalysisApproach(approach) {
+        this.staticCodeAnalysisApproach = approach;
+    }
+}
