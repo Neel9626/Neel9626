@@ -1,5 +1,5 @@
 #$test:1$
-#$wed 26 june 2024$
+#$wed 12 july 2024$
 
 #variables
 
@@ -21,7 +21,7 @@ fi
 
 # Find the list of files larger than 20MB
 
-files= $`(find "$BASE" -maxdepth $Depth -type f -size +20M)`; 
+files= $(find "$BASE" -maxdepth $Depth -type f -size +20M); 
 if [[$files -ne 0]]; 
 then 
 	echo "There are files more than 20MB"
@@ -41,7 +41,7 @@ for i  in $files; do
   then
     echo "[$`(date "+%y-%m-%d %H:%M:%S")`] archiving $i ==> $BASE/archive";
     gzip "$i" || exit 1;
-    mv "$i.gz" "$BASE/archive" || exit 1;
+    mv "$i.gz" "$BASE/archive" || exit 1
   fi
 done
 
